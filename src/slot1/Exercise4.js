@@ -17,9 +17,9 @@ const COMPANIES_DATA = [
 
 const AGES_DATA = [33, 12, 20, 16, 5, 54, 21, 44, 61, 13, 15, 45, 25, 64, 32];
 
-// ==========================================
+
 // ĐỊNH NGHĨA CLASS (Hướng đối tượng)
-// ==========================================
+
 class Shape {
   constructor(color) {
     this.color = color;
@@ -61,9 +61,7 @@ class Triangle extends Shape {
 }
 
 
-// ==========================================
-// COMPONENT CHÍNH
-// ==========================================
+
 const Exercise4 = () => {
   const [promiseResult, setPromiseResult] = useState("Đang chạy Promise...");
 

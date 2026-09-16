@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Form đặt vé máy bay</title>
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+    <style>
+        body {
+            background: #f5f5f5;
+            font-family: Arial, sans-serif;
+        }
+
+        .form-box {
+            width: 330px;
+            margin: 40px auto;
+            background: white;
+            border: 1px solid #999;
+            padding: 10px;
+            position: relative;
+        }
+
+        .top-alert {
+            height: 25px;
+            background: #fff4cc;
+            text-align: right;
+            padding-right: 12px;
+            color: #c7a646;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        .title {
+            font-size: 25px;
+            font-weight: bold;
+            margin-top: 8px;
+            margin-bottom: 4px;
+        }
+
+        .group {
+            margin-bottom: 10px;
+        }
+
+        .group-title {
+            font-size: 13px;
+            color: #555;
+            margin-bottom: 3px;
+        }
+        .input-group-text {
+            background: white;
+            color: #888;
+        }
+
+        .form-control {
+            font-size: 13px;
+        }
+
+        .help-text {
+            font-size: 11px;
+            color: #888;
+            margin-top: 4px;
+        }
+
+        .select-title {
+            font-size: 13px;
+            margin-bottom: 4px;
+        }
+
+        .form-select {
+            font-size: 13px;
+        }
+
+        .check-title {
+            font-size: 13px;
+            margin-top: 4px;
+            margin-bottom: 4px;
+        }
+
+        .form-check {
+            font-size: 13px;
+            margin-bottom: 2px;
+        }
+
+        .btn-book {
+            width: 100%;
+            height: 34px;
+            margin-top: 8px;
+            background: #087df5;
+            border: none;
+            font-size: 13px;
+        }
+
+        .btn-book:hover {
+            background: #006de0;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="form-box">
+
+    <div class="top-alert">
+        ×
+    </div>
+
+    <div class="title">
+        Form đặt vé máy bay
+    </div>
+
+    <div class="separator"></div>
+
+    <div class="group">
+
+        <div class="group-title">
+            Họ tên
+        </div>
+
+        <div class="input-group">
+            <span class="input-group-text">
+                ♙
+            </span>
+
+            <input
+                type="text"
+                class="form-control"
+                placeholder="Họ tên">
+
+            <span class="input-group-text">
+                vnd
+            </span>
+        </div>
+
+        <div class="help-text">
+            Phải nhập 5 ký tự, in hoa...
+        </div>
+
+    </div>
+
+    <div class="separator"></div>
+
+    <div class="group">
+
+        <div class="group-title">
+            Địa chỉ
+        </div>
+
+        <input
+            type="text"
+            class="form-control">
+
+        <div class="help-text">
+            Phải nhập 5 ký tự, in hoa...
+        </div>
+
+    </div>
+
+    <div class="row">
+
+        <div class="col-6">
+
+            <div class="select-title">
+                Đi từ
+            </div>
+
+            <select class="form-select">
+                <option>Hà nội</option>
+                <option>Đà nẵng</option>
+                <option>Hồ chí minh</option>
+            </select>
+
+        </div>
+
+        <div class="col-6">
+
+            <div class="select-title">
+                Đến
+            </div>
+
+            <select class="form-select">
+                <option>Hà nội</option>
+                <option>Đà nẵng</option>
+                <option>Hồ chí minh</option>
+            </select>
+
+        </div>
+
+    </div>
+
+    <div class="check-title">
+        Chọn chiều đi (Khứ hồi)
+    </div>
+
+    <div class="form-check">
+        <input
+            class="form-check-input"
+            type="checkbox"
+            id="di">
+
+        <label
+            class="form-check-label"
+            for="di">
+            Đi
+        </label>
+    </div>
+
+    <div class="form-check">
+        <input
+            class="form-check-input"
+            type="checkbox"
+            id="ve">
+
+        <label
+            class="form-check-label"
+            for="ve">
+            Về
+        </label>
+    </div>
+
+    <button
+        type="button"
+        class="btn btn-primary btn-book">
+        Đặt vé
+    </button>
+
+</div>
+
+</body>
+</html>

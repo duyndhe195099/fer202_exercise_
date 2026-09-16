@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 7: Cards Column</title>
+    <!-- Include Bootstrap CSS via CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Custom styles to match the specific look of the exercise screenshot */
+        .card-custom-blue {
+            background-color: #2b7bff; /* Custom Blue */
+            border: 1px solid #1a65de;
+        }
+        .card-custom-yellow {
+            background-color: #fcc125; /* Custom Yellow */
+            border: 1px solid #e0a71b;
+        }
+        .card-custom-red {
+            background-color: #d33e4b; /* Custom Red */
+            border: 1px solid #b8333e;
+        }
+        
+        .car-image-container {
+            background-color: #ffffff;
+            /* Ensures the white background has a strict border relative to the card */
+            border: 1px solid #dee2e6; 
+        }
+
+        .car-image {
+            object-fit: contain;
+            max-height: 220px;
+            width: 100%;
+            padding: 1.5rem;
+        }
+
+        .card-text-custom {
+            color: #1a1a1a;
+            font-size: 1.1rem;
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+<body class="bg-light p-4">
+
+    <div class="container-fluid">
+        <!-- Main Heading -->
+        <h2 class="mb-4">Cards Columns</h2>
+
+        <!-- Bootstrap Grid System for Cards -->
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            
+            <!-- Card 1: Blue -->
+            <div class="col">
+                <div class="card h-100 card-custom-blue rounded-1">
+                    <!-- Top, left, right padding area revealing the card background -->
+                    <div class="p-3 pb-0">
+                        <div class="car-image-container">
+                            <img src="https://shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dwc1a7c1f3/images/Lux-A/hinh-anh-gia-xe-VinFast-Lux-A2.0-ban-tieu-chuan-mau-do-mystique-red.png" class="car-image" alt="Toyota Corolla Cross">
+                        </div>
+                    </div>
+                    <!-- Text Area -->
+                    <div class="card-body text-center p-2">
+                        <p class="card-text-custom">Some text inside the first card</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2: Yellow -->
+            <div class="col">
+                <div class="card h-100 card-custom-yellow rounded-1">
+                    <div class="p-3 pb-0">
+                        <div class="car-image-container">
+                            <img src="https://shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dwc1a7c1f3/images/Lux-A/hinh-anh-gia-xe-VinFast-Lux-A2.0-ban-tieu-chuan-mau-do-mystique-red.png" class="car-image" alt="Toyota Corolla Cross">
+                        </div>
+                    </div>
+                    <div class="card-body text-center p-2">
+                        <p class="card-text-custom">Some text inside the first card</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3: Red -->
+            <div class="col">
+                <div class="card h-100 card-custom-red rounded-1">
+                    <div class="p-3 pb-0">
+                        <div class="car-image-container">
+                            <img src="https://shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dwc1a7c1f3/images/Lux-A/hinh-anh-gia-xe-VinFast-Lux-A2.0-ban-tieu-chuan-mau-do-mystique-red.png" class="car-image" alt="Toyota Corolla Cross">
+                        </div>
+                    </div>
+                    <div class="card-body text-center p-2">
+                        <p class="card-text-custom">Some text inside the first card</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Include Bootstrap JS bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
